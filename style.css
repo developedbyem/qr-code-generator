@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Sans+Arabic&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+body {
+  background-color: #b953d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Sans Arabic", sans-serif;
+  min-height: 100vh;
+}
+.container {
+  background-color: #fff;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: 2.5rem 1.5rem 1.5rem;
+  margin-inline: 1rem;
+}
+.info h1 {
+  font-family: "Lalezar", cursive;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-block: 1rem;
+}
+
+/* element :where(tag1, tag2, ...) = element tag,element tag */
+form :where(input, button) {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-block: 0.3rem;
+  transition: all 0.2s ease-in-out;
+}
+form input {
+  border: 1px solid #999;
+}
+form button {
+  text-transform: uppercase;
+}
+form button:hover {
+  cursor: pointer;
+  background-color: #b953d1;
+  color: #fff;
+}
+.qr-code {
+  display: none;
+}
+img {
+  width: 180px;
+  display: block;
+  margin: 0 auto;
+}
